@@ -1,0 +1,89 @@
+################################################
+# The following objects contain configs used
+#  for Image/Humicroedit dataset, as indicated.
+# Uncommnet/comment relevant parts as needed
+################################################
+dataset:
+  train_test_split: True
+  Y_coeffs_config_num: 1000
+#### PertImgSim
+  dataset: PertImgSim
+  save_loc: ../out/viz/ImgPertSim
+  data_save_dir: ../data/ImgPertSim/ImgPertSim
+  Ydiff_data_save_dir: ../data/ImgPertSim/diffY/ImgPertSim_unif
+  X_dim: 100
+  Z_dim: 100
+  W_dim: 5
+  Y_dim: 1
+  dataset_length: 9000
+  dataset_length_test_seen: 1000
+  dataset_length_test: 400
+  # For Fig. 6, set to 10. For Fig. 8 set to 1.
+  num_trials_exp: 10
+#### Humicroedit
+#  dataset: Humicroedit
+#  save_loc: ../out/viz/Humicroedit
+#  data_save_dir: ../data/Humicroedit/Humicroedit
+#  Ydiff_data_save_dir: ../data/Humicroedit/diffY/Humicroedit_unif
+#  X_dim: 300
+#  Z_dim: 300
+#  W_dim: 300
+#  Y_dim: 1
+#  dataset_length: 6171
+#  dataset_length_test_seen: 686
+#  dataset_length_test: 144
+# # For Fig. 6, set to 10. For Fig. 8 set to 1.
+#  num_trials_exp: 10
+
+optimizer:
+  #### PertImgSim
+  tensorboard_dir: ../logs/ImgPert
+  inputSize_g: 105
+  epochs1: 100
+  epochs2: 50
+  window_size_phi: 5
+  alphas:
+    - 0.05
+    - 0.1
+    - 0.3
+    - 0.5
+    - 0.7
+    - 1
+  #### Humicroedit
+#  tensorboard_dir: ../logs/Humicroedit
+#  inputSize_g: 600
+#  epochs1: 700
+#  epochs2: 100
+#  num_phis: 30
+#  alphas:
+#    - 0.01
+#    - 0.05
+#    - 0.1
+#    - 0.3
+#    - 0.5
+#    - 0.7
+#    - 1
+
+  outputSize_g: 1
+  hidden_dim_g: 512
+  g_parametrize: MLP
+  dropout: 0.
+  ablation: None
+  treatment: W
+  optimizer: adam
+  lr1: 0.002
+  lr2: 0.001
+  gamma: 0.97
+  schd_step_size: 200
+  weight_decay: 0
+  momentum: 0
+  beta1: 0.9
+  beta2: 0.99
+  train_batch_size: 400
+  test_batch_size: 100
+  seed: 42
+  perc_labels_for_Y_pred: 10
+  Y_target: continuous
+  baseline_type: LassoReg
+
+
