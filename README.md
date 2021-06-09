@@ -7,12 +7,12 @@ This folder contains code to reproduce results for the ICML 2021 paper. Please n
 
 The following will need to be downloaded and generated for the code to run:
 
-#### data/
+#### Python_Img_Humor/data/
 1. you will need glove.6B, downloaded from https://nlp.stanford.edu/projects/glove/.
 2. (optional) one could also use GoogleNews-vectors-negative300.bin.gz, download from https://code.google.com/archive/p/word2vec/, under 'Pre-trained word and phrase vectors'.
 3. you will need semeval-2020-task-7-dataset/\*, downloaded from https://www.cs.rochester.edu/u/nhossain/humicroedit.html, 'Full dataset release'.
 
-#### data/ImgPretSim/diffY and data/Humicroedit/diffY
+#### Python_Img_Humor/data/ImgPretSim/diffY and Python_Img_Humor/data/Humicroedit/diffY
 To reproduce Figure 8 you will need to generate the datasets with different Y configs, by running the last cell in the notebooks Python_Img_Humor/data_generation_notebooks/ImgPretSim/ImgPretSim.ipynb and Python_Img_Humor/data_generation_notebooks/Humicroedit/Humicroedit.ipynb.
 
 
