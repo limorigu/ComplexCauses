@@ -1,7 +1,7 @@
-Code: Operationalizing Complex Causes: A Pragmatic View of Mediation
+Operationalizing Complex Causes: A Pragmatic View of Mediation
 ====================================================================
 
-This folder contains code to reproduce results for the ICML 2021 paper. Please note that certain files referenced by some of the scripts included.
+This folder contains code to reproduce results for the [ICML 2021 paper](https://arxiv.org/abs/2106.05074). Please note that certain files referenced by some of the scripts included.
 
 ## Prereqs
 

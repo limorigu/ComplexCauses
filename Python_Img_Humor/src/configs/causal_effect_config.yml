@@ -5,7 +5,7 @@
 ################################################
 dataset:
   train_test_split: True
-  Y_coeffs_config_num: 1000
+  
 #### PertImgSim
   dataset: PertImgSim
   save_loc: ../out/viz/ImgPertSim
@@ -18,6 +18,7 @@ dataset:
   dataset_length: 9000
   dataset_length_test_seen: 1000
   dataset_length_test: 400
+  Y_coeffs_config_num: 1500
   # For Fig. 6, set to 10. For Fig. 8 set to 1.
   num_trials_exp: 10
 #### Humicroedit
@@ -34,6 +35,7 @@ dataset:
 #  dataset_length_test: 144
 # # For Fig. 6, set to 10. For Fig. 8 set to 1.
 #  num_trials_exp: 10
+# Y_coeffs_config_num: 100
 
 optimizer:
   #### PertImgSim
